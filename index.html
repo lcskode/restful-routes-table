@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RESTful Routes Table</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1><strong>RESTful Routes</strong></h1>
+      <h3>A table of all 7 RESTful routes</h3>
+    </div> <!-- /.jumbotron -->
+    <table class="table table-bordered">
+      <tr>
+        <th>Name</th>
+        <th>Path</th>
+        <th>HTTP Verb</th>
+        <th>Purpose</th>
+      </tr>
+      <tr>
+        <td>Index</td>
+        <td>/dogs</td>
+        <td>GET</td>
+        <td>List all dogs</td>
+      </tr>
+      <tr class="success">
+        <td>New</td>
+        <td>/dogs/new</td>
+        <td>GET</td>
+        <td>Show new dog form</td>
+      </tr>
+      <tr class="success">
+        <td>Create</td>
+        <td>/dogs</td>
+        <td>POST</td>
+        <td>Create new dog, then redirect somewhere</td>
+      </tr>
+      <tr class="info">
+        <td>Show</td>
+        <td>/dogs/:id</td>
+        <td>GET</td>
+        <td>Show info about one specific dog</td>
+      </tr>
+      <tr class="warning">
+        <td>Edit</td>
+        <td>/dogs/:id/edit</td>
+        <td>GET</td>
+        <td>Show edit form for one dog</td>
+      </tr>
+      <tr class="warning">
+        <td>Update</td>
+        <td>/dogs/:id</td>
+        <td>PUT</td>
+        <td>Update a particuler dog, then redirect somewhere</td>
+      </tr>
+      <tr class="danger">
+        <td>Destroy</td>
+        <td>/dogs/:id</td>
+        <td>DELETE</td>
+        <td>Delete a particuler dog, then redirect somewhere</td>
+      </tr>
+    </table>
+  </div> <!-- /.container -->
+</body>
+</html>
